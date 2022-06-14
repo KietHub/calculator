@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+
+#display-output, .calc-button {
+    font-size: 52px;
+}
+
+#display-output {
+    width: 400px;
+    height: 100px;
+    border: 5px solid black;
+    border-radius: 1rem 1rem 0 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+#button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 5px solid black;
+    gap: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    border-top: none;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.calc-button {
+    border-radius: 0.25em;
+}
+
