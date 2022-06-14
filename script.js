@@ -33,6 +33,9 @@ function operate(a, b, operator) {
             console.log('operate: operator error');
             break;
     }
+    if(result.toString().length > 12) {
+        return result.toExponential(2);
+    }
     return result;
 }
 
@@ -107,7 +110,11 @@ function generateButtons() {
         btn.classList.add('calc-button');
         btn.addEventListener('click', buttonPress);
         btnContainer.appendChild(btn);
+        if(/[\+\-x÷=]/.test(btn.textContent)) {
+            btn.classList.add('operator');
+        }
     }
 }
 
 generateButtons();
+
